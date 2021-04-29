@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.neo4j:neo4j-jmx
+    versions:
+    - 3.5.26
+    - 3.5.27
+  - dependency-name: org.springframework:spring-web
+    versions:
+    - 5.3.5
+  - dependency-name: com.orientechnologies:orientdb-server
+    versions:
+    - 3.1.10
+  - dependency-name: net.bull.javamelody:javamelody-core
+    versions:
+    - 1.86.0
